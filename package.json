@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://konstantinroy.github.io/TodoList/",
+  "homepage": "https://konstantinroy.github.io/todolist/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
