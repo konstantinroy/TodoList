@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Solitreo&display=swap");
+
+.todoCountText {
+  font-family: "Solitreo", cursive;
+  color: #fff;
+}
+
+.todoCountText {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 810px) {
+  .todoCountText {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .todoCountText {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .todoCountText {
+    font-size: 20px;
+    margin: 40px 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .todoCountText {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 344px) {
+  .todoCountText {
+    margin-top: 50px;
+  }
+}

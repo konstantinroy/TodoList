@@ -1,0 +1,50 @@
+.todoActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoSort {
+  width: 40%;
+}
+
+.refreshIcon {
+  transition: 2s easy;
+  animation: rotateDeleteBtn 16s infinite;
+}
+
+.deleteTodoBtn {
+}
+
+.refreshIcon:hover {
+  animation: rotateDeleteBtn 16s infinite;
+}
+
+@keyframes rotateDeleteBtn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .todoSort {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .todoSort {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 360px) {
+  .todoSort {
+    width: 50%;
+  }
+}

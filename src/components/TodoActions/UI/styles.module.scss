@@ -1,0 +1,48 @@
+.button {
+  align-items: center;
+  display: inline-flex;
+  background-color: #ffffff00;
+  color: $pinkColor;
+  border: 1px solid #ffffff4d;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: 0.2s ease-in-out;
+  animation: buttonGrow 2s ease-in-out infinite alternate;
+}
+
+.button:hover {
+  background-color: rgb(61, 61, 61);
+  color: #da5590;
+}
+
+@keyframes buttonGrow {
+  0% {
+    box-shadow: 0px 0px 0px #bb487b;
+  }
+  100% {
+    box-shadow: 0px 0px 3px #bb487b;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .button {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .button {
+    font-size: 20px;
+    margin: 0 0 0 8px;
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.todoFormBlock {
+  margin: 3vw 0;
+}
+
+.todoFormBlock input {
+  background-color: $bgColor;
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  width: 90%;
+  height: 100%;
+  border: 1px solid $greyColor;
+  border-radius: 5px;
+  animation: inputGrow 2s ease-in-out infinite alternate;
+}
+
+.todoFormBlock button {
+  background-color: $pinkColor;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.todoFormBlock button:hover {
+  background-color: $pinkColorlight;
+}
+
+.todoFormBlock input,
+button {
+  height: 100%;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.todoForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes inputGrow {
+  0% {
+    box-shadow: 0px 0px 0px $pinkColor;
+  }
+  100% {
+    box-shadow: 0px 0px 3px $pinkColor;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .todoFormBlock input {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .todoFormBlock button {
+    height: 48px;
+    width: 48px;
+    margin-left: 13px;
+  }
+  .todoFormBlock input,
+  button {
+    padding: 7px 13px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .todoFormBlock input {
+    width: 90%;
+  }
+  .todoFormBlock {
+    margin: 4vw 0;
+  }
+  .todoFormBlock input {
+    // width: 50%;
+  }
+  .todoFormBlock button {
+    height: 41px;
+    width: 41px;
+    margin-left: 10px;
+  }
+  .todoFormBlock input,
+  button {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .todoFormBlock {
+    margin: 4vw 0;
+  }
+  .todoFormBlock button {
+    height: 43px;
+    width: 43px;
+  }
+  .todoFormBlock input,
+  button {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .todoFormBlock {
+    margin: 4vw 0;
+  }
+}

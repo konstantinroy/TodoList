@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+// @import url('@/assets/styles/colors');
+
+.todo {
+  width: 100%;
+
+  background-color: $pinkColorlight;
+  color: #322b2b;
+  text-shadow: 0px 0px 0px #000;
+  border: 1px solid $greyColor;
+  border-radius: 6px;
+  margin: 0.5vw 0;
+  padding: 15px 15px;
+  animation: Todo_animationTodoBlock__KXCYM 1s ease;
+}
+
+.todoBlock {
+  display: grid;
+  grid-template-columns: 9% 71% 20%;
+  align-items: center;
+  width: 100%;
+}
+
+.todoBlock svg {
+  cursor: pointer;
+}
+
+.deleteIcon,
+.checkIcon {
+  margin: 0 1vw 0 0;
+}
+
+.deleteIcon,
+.todoIcon {
+  font-size: 2.9vw;
+}
+
+.viewTodoText {
+  grid-template-columns: auto;
+  padding: 15px 15px;
+}
+
+.todoIcon {
+  color: #28282b;
+}
+
+.todoBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.todoBoxIcons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.textBlock {
+  width: 100%;
+  text-align: start;
+  font-size: 20px;
+  font-family: "Pacifico", cursive;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.visTextBlock {
+  width: 100%;
+  margin: 5px 15px;
+  white-space: break-spaces;
+  word-break: break-all;
+}
+
+.todoBox button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0;
+  display: contents;
+}
+
+.deleteIcon,
+.checkIcon,
+.XIcon {
+  cursor: pointer;
+}
+
+.deleteIcon {
+  color: #ff0000b3;
+}
+
+.checkIcon {
+  font-size: 3.2vw;
+  color: rgba(0, 128, 0, 0.726);
+}
+
+.XIcon {
+  font-size: 2.9vw;
+  margin: 0 1vw 0 0.3vw;
+}
+
+.completedTodo svg {
+  color: $greyColor;
+}
+
+.todoBlock.completed svg:hover {
+  color: $greyColor;
+}
+
+p {
+  margin: 0;
+}
+
+@keyframes animationTodoBlock {
+  0% {
+    box-shadow: 0px 0px 20px $pinkColor;
+  }
+  100% {
+    box-shadow: unset;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .visTextBlock {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .deleteIcon,
+  .checkIcon {
+    margin: 0 1vw 0 0;
+  }
+  .deleteIcon,
+  .todoIcon,
+  .XIcon {
+    font-size: 3.2vw;
+  }
+  .XIcon {
+    margin: 0 1vw 0 0.5vw;
+  }
+  .checkIcon {
+    font-size: 3.7vw;
+  }
+  .viewTodoText {
+    padding: 0 15px;
+  }
+  .visTextBlock {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .deleteIcon,
+  .todoIcon,
+  .XIcon {
+    font-size: 4vw;
+  }
+  .checkIcon {
+    font-size: 4.5vw;
+  }
+  .viewTodoText {
+    padding: 0;
+  }
+  .todoBlock {
+    width: 100%;
+  }
+  .visTextBlock {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .deleteIcon,
+  .todoIcon,
+  .XIcon {
+    font-size: 5vw;
+  }
+  .checkIcon {
+    font-size: 5.5vw;
+  }
+  .todoBlock {
+    padding: 0;
+    margin: 0;
+  }
+  .textBlock {
+    font-size: 18px;
+  }
+  .visTextBlock {
+    width: 100%;
+    margin: 0;
+  }
+  .inputBox {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .textBlock {
+    font-size: 16px;
+  }
+  .deleteIcon,
+  .todoIcon .XIcon {
+    font-size: 6vw;
+  }
+  .XIcon {
+    font-size: 6vw;
+  }
+  .checkIcon {
+    margin: 0 1vw 0 0.7vw;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .visTextBlock {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 314px) {
+  .inputBox {
+    width: 60%;
+  }
+}
