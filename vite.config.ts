@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/TodoLIst/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/todolist/' : '/',
   css: {
     preprocessorOptions: {
       scss: {
@@ -26,4 +26,4 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
   },
-})
+});

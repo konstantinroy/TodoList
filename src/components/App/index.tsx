@@ -1,9 +1,9 @@
-import TodoForm from '@components/TodoForm'
-import TodoList from '@components/TodoList'
-import TodoActions from '@components/TodoActions'
-import TodoCountText from '../TodoCountText'
+import TodoForm from '@components/TodoForm';
+import TodoList from '@components/TodoList';
+import TodoActions from '@components/TodoActions';
+import TodoCountText from '../TodoCountText';
 
-import './styles.scss'
+import './styles.scss';
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <TodoCountText />
 
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

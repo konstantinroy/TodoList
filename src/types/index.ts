@@ -1,4 +1,4 @@
-import type { UUIDTypes } from 'uuid'
+import type { UUIDTypes } from 'uuid';
 
 export type TodoId = UUIDTypes
 

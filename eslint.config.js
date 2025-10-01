@@ -23,7 +23,7 @@ export default defineConfig([
         "indent": ["warn", 2],
         "max-len": ["warn", {"code": 120}],
         "comma-dangle": ["warn", "always-multiline"],
-        "semi": [2, "never"],
+        "semi": [2, "always"],
         // "import/order": ["warn", {
         //     "groups": ["builtin", "external", "internal",
         //     "parent", "sibling", "index", "object", "type"],

@@ -1,4 +1,4 @@
-import styles from './styles.module.scss'
+import styles from './styles.module.scss';
 
 interface Props extends React.PropsWithChildren {
   title: string
@@ -23,7 +23,7 @@ const Button = ({
     >
       {children}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

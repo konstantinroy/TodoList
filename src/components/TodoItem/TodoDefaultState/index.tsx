@@ -1,12 +1,12 @@
-import { RiTodoFill } from 'react-icons/ri'
-import { RiDeleteBin2Line } from 'react-icons/ri'
-import { BsCheckLg } from 'react-icons/bs'
-import { VscChromeClose } from 'react-icons/vsc'
+import { RiTodoFill } from 'react-icons/ri';
+import { RiDeleteBin2Line } from 'react-icons/ri';
+import { BsCheckLg } from 'react-icons/bs';
+import { VscChromeClose } from 'react-icons/vsc';
 
-import styles from './styles.module.scss'
-import { useTodos } from '@/hooks/useTodos'
-import type { Dispatch, SetStateAction } from 'react'
-import type { TodoId } from '@/types'
+import styles from './styles.module.scss';
+import { useTodos } from '@/hooks/useTodos';
+import type { Dispatch, SetStateAction } from 'react';
+import type { TodoId } from '@/types';
 
 interface Props {
   isCompleted: boolean;
@@ -25,13 +25,13 @@ const TodoDefaultState: React.FC<Props> = ({
   text,
   id,
 }) => {
-  const { toggleTodoHandler, deleteTodoHandler } = useTodos()
+  const { toggleTodoHandler, deleteTodoHandler } = useTodos();
 
   const editTodoTextHandler = () => {
     if (!isCompleted) {
-      setEditTodoTextOn((prevState) => !prevState)
+      setEditTodoTextOn((prevState) => !prevState);
     }
-  }
+  };
 
   return (
     <div
@@ -73,7 +73,7 @@ ${isViewText ? styles.visTextBlock : ''}
             <VscChromeClose
               className={styles.XIcon}
               onClick={() => {
-                toggleTodoHandler(id)
+                toggleTodoHandler(id);
               }}
               title="Отменить"
             />
@@ -81,7 +81,7 @@ ${isViewText ? styles.visTextBlock : ''}
             <BsCheckLg
               className={styles.checkIcon}
               onClick={() => {
-                toggleTodoHandler(id)
+                toggleTodoHandler(id);
               }}
               title="Выполнить задачу"
             />
@@ -89,7 +89,7 @@ ${isViewText ? styles.visTextBlock : ''}
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default TodoDefaultState
+export default TodoDefaultState;

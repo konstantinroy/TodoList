@@ -1,10 +1,10 @@
-import { useRef, useState, useEffect } from 'react'
-import type { TodoId } from '@/types'
+import { useRef, useState, useEffect } from 'react';
+import type { TodoId } from '@/types';
 
-import EditTodoText from './EditTodoText'
-import TodoDefaultState from './TodoDefaultState'
+import EditTodoText from './EditTodoText';
+import TodoDefaultState from './TodoDefaultState';
 
-import styles from './styles.module.scss'
+import styles from './styles.module.scss';
 
 interface Props {
   id: TodoId
@@ -13,20 +13,20 @@ interface Props {
 }
 
 const Todo: React.FC<Props> = ({ id, text, isCompleted }) => {
-  const divRef = useRef<null | HTMLDivElement>(null)
+  const divRef = useRef<null | HTMLDivElement>(null);
 
-  const [isViewText, setIsViewText] = useState<boolean>(false)
-  const [editTodoTextOn, setEditTodoTextOn] = useState(false)
+  const [isViewText, setIsViewText] = useState<boolean>(false);
+  const [editTodoTextOn, setEditTodoTextOn] = useState(false);
 
   const toggleIsViewTextHandler = () => {
-    setIsViewText((prevState) => !prevState)
-  }
+    setIsViewText((prevState) => !prevState);
+  };
 
   useEffect(() => {
     if (divRef.current) {
-      divRef.current?.scrollIntoView({ behavior: 'smooth' })
+      divRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [])
+  }, []);
 
   return (
     <>
@@ -56,7 +56,7 @@ const Todo: React.FC<Props> = ({ id, text, isCompleted }) => {
 
       <div ref={divRef} />
     </>
-  )
-}
+  );
+};
 
-export default Todo
+export default Todo;

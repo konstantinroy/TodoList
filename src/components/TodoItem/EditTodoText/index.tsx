@@ -3,14 +3,14 @@ import {
   useState,
   type Dispatch,
   type SetStateAction,
-} from 'react'
-import { BsCheckLg } from 'react-icons/bs'
-import { VscChromeClose } from 'react-icons/vsc'
+} from 'react';
+import { BsCheckLg } from 'react-icons/bs';
+import { VscChromeClose } from 'react-icons/vsc';
 
-import type { TodoId } from '@/types'
+import type { TodoId } from '@/types';
 
-import styles from './styles.module.scss'
-import { useTodos } from '@/hooks/useTodos'
+import styles from './styles.module.scss';
+import { useTodos } from '@/hooks/useTodos';
 
 interface Props {
   currentTodoText: string
@@ -23,17 +23,17 @@ const EditTodoText: React.FC<Props> = ({
   id,
   currentTodoText,
 }) => {
-  const { editTodoHandler } = useTodos()
+  const { editTodoHandler } = useTodos();
 
-  const [newTodoText, setNewTodoText] = useState<string>(currentTodoText)
+  const [newTodoText, setNewTodoText] = useState<string>(currentTodoText);
 
   const handleTodoTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setNewTodoText(e.target.value)
-  }
+    setNewTodoText(e.target.value);
+  };
 
   const onSubmitHandler = (event: FormEvent) => {
-    event.preventDefault()
-  }
+    event.preventDefault();
+  };
 
   return (
     <div className={styles.todoInput}>
@@ -57,15 +57,15 @@ const EditTodoText: React.FC<Props> = ({
           <BsCheckLg
             className={styles.checkIcon}
             onClick={() => {
-              setEditTodoTextOn((prevState) => !prevState)
-              editTodoHandler(id, newTodoText)
+              setEditTodoTextOn((prevState) => !prevState);
+              editTodoHandler(id, newTodoText);
             }}
             title="Сохранить"
           />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default EditTodoText
+export default EditTodoText;
