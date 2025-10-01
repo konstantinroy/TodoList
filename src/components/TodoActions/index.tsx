@@ -1,15 +1,15 @@
-import { RiDeleteBin2Line, RiRefreshLine } from 'react-icons/ri';
-import Button from './UI/Button';
-import { useTodos } from '@/hooks/useTodos';
-import TodoSort from './TodoSort/index';
+import { RiDeleteBin2Line, RiRefreshLine } from 'react-icons/ri'
+import Button from './UI/Button'
+import { useTodos } from '@/hooks/useTodos'
+import TodoSort from './TodoSort/index'
 
-import styles from './styles.module.scss';
+import styles from './styles.module.scss'
 
 const TodosActions = () => {
-  const { resetTodosHandler, deleteCompletedTodosHandler, todos } = useTodos();
+  const { resetTodosHandler, deleteCompletedTodosHandler, todos } = useTodos()
 
   if (todos.length === 0) {
-    return null;
+    return null
   }
 
   return (
@@ -35,7 +35,7 @@ const TodosActions = () => {
         </Button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TodosActions;
+export default TodosActions

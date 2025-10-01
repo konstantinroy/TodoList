@@ -1,20 +1,20 @@
-import { useTodos } from '@/hooks/useTodos';
-import { SORT_TYPES } from '@/hooks/useTodosStorage';
+import { useTodos } from '@/hooks/useTodos'
+import { SORT_TYPES } from '@/hooks/useTodosStorage'
 
-import './styles.module.scss';
+import './styles.module.scss'
 
 const TodoSort = () => {
-  const { setSortType } = useTodos();
+  const { setSortType } = useTodos()
 
   const viewAllTodos = () => {
-    setSortType(SORT_TYPES.ALL);
-  };
+    setSortType(SORT_TYPES.ALL)
+  }
   const viewActiveTodos = () => {
-    setSortType(SORT_TYPES.ACTIVE);
-  };
+    setSortType(SORT_TYPES.ACTIVE)
+  }
   const viewCompletedTodos = () => {
-    setSortType(SORT_TYPES.COMPLETED);
-  };
+    setSortType(SORT_TYPES.COMPLETED)
+  }
 
   return (
     <select name="sort">
@@ -28,7 +28,7 @@ const TodoSort = () => {
         Выполненные
       </option>
     </select>
-  );
-};
+  )
+}
 
-export default TodoSort;
+export default TodoSort

@@ -1,12 +1,12 @@
-import { useTodos } from '@/hooks/useTodos';
-import TodoItem from '@components/TodoItem';
-import { SORT_TYPES } from '@/hooks/useTodosStorage';
-import { type Todo } from '@/types';
+import { useTodos } from '@/hooks/useTodos'
+import TodoItem from '@components/TodoItem'
+import { SORT_TYPES } from '@/hooks/useTodosStorage'
+import { type Todo } from '@/types'
 
-import styles from './styles.module.scss';
+import styles from './styles.module.scss'
 
 const TodoList: React.FC = () => {
-  const { todos, sortType } = useTodos();
+  const { todos, sortType } = useTodos()
 
   return (
     <div>
@@ -51,7 +51,7 @@ const TodoList: React.FC = () => {
             
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TodoList;
+export default TodoList
