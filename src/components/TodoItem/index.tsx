@@ -13,7 +13,7 @@ interface Props {
 }
 
 const Todo: React.FC<Props> = ({ id, text, isCompleted }) => {
-  const divRef = useRef(null)
+  const divRef = useRef<null | HTMLDivElement>(null)
 
   const [isViewText, setIsViewText] = useState<boolean>(false)
   const [editTodoTextOn, setEditTodoTextOn] = useState(false)
