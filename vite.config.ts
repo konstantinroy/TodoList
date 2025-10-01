@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/TodoLIst',
+  base: process.env.NODE_ENV === 'production' ? '/TodoLIst/' : '/',
   css: {
     preprocessorOptions: {
       scss: {
